@@ -1,0 +1,4 @@
+venv/
+.env
+leads/
+leads.log
