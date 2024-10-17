@@ -282,4 +282,3 @@ if __name__ == '__main__':
     main()
     # leads_file = "Leads_Software automation leads_2024_Oct_12_205336.json"
     # push_json_to_trello(leads_file)
-    
