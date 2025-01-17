@@ -181,6 +181,7 @@ def main():
     # q = urllib.parse.quote(input("Search query (ie: coffee shops in New York): "))
     q = 'coffee shops in calgary'
     maps_url = input('Provide the google maps url of your search: ')
+    # filter_in = input('Optional: Provide filters from the following comma separated examples ("without websites, without phone"): ')
     tag = input("What is the category of this leads list (ie: Gym owners, Software egency leads, etc): ")
     # maps_url='https://www.google.com/maps/search/web+developer+calgary/@51.0205974,-114.0766518,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D'
     # tag='Web Developer'
@@ -194,7 +195,7 @@ def main():
                 logging.info(f"Allowed {url} through the filter")
                 filtered_source_urls.add(url)
             else:
-                logging.info(f"Filtered out {url}")        
+                logging.info(f"Filtered out {url}")
 
         # logging.info(filtered_source_urls)
         for website in filtered_source_urls:
